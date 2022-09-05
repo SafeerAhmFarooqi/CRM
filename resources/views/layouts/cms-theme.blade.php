@@ -1,0 +1,15 @@
+@extends('layouts.master-layout')
+@section('theme-head')
+    @include('cms-theme.head')
+@endsection
+@section('master-body-attributes')
+    @section('theme-body-attributes')
+    id="top"      
+    @show
+@endsection
+@section('theme-content')
+    @yield('body-content')
+@endsection
+@section('theme-script')
+    @include('cms-theme.script')
+@endsection
